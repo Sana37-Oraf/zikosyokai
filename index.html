@@ -2,59 +2,91 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<title>Sana's Storybook</title>
+<title>Sana Channel</title>
 <style>
 body{
   margin:0;
-  font-family:"Hiragino Maru Gothic ProN", "Yu Gothic", sans-serif;
-  background: linear-gradient(#ffe6f2,#e6f7ff);
-  color:#5a4a6b;
-  text-align:center;
+  font-family:"Yu Gothic",sans-serif;
+  background:#f9f9f9;
 }
 
 header{
-  padding:40px;
+  background:#ff7fbf;
+  color:white;
+  padding:15px 25px;
+  font-size:22px;
+  font-weight:bold;
+}
+
+.container{
+  display:grid;
+  grid-template-columns:2fr 1fr;
+  gap:20px;
+  padding:20px;
+}
+
+.video-box{
+  background:white;
+  padding:20px;
+  border-radius:12px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.video{
+  width:100%;
+  height:360px;
+  background:#ddd;
+  border-radius:10px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:24px;
+}
+
+.profile{
+  background:white;
+  padding:20px;
+  border-radius:12px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.avatar{
+  width:100px;
+  height:100px;
+  border-radius:50%;
+  background:#ffd6ec;
+  margin:auto;
+  display:flex;
+  align-items:center;
+  justify-content:center;
   font-size:40px;
-  letter-spacing:3px;
+}
+
+h2{
+  text-align:center;
+}
+
+.button{
+  display:block;
+  width:100%;
+  padding:10px;
+  margin-top:10px;
+  border:none;
+  border-radius:20px;
+  background:#ff7fbf;
+  color:white;
+  cursor:pointer;
+}
+
+.list{
+  margin-top:20px;
 }
 
 .card{
   background:white;
-  width:70%;
-  max-width:600px;
-  margin:40px auto;
-  padding:30px;
-  border-radius:30px;
-  box-shadow:0 10px 25px rgba(0,0,0,0.1);
-}
-
-h2{
-  color:#ff7fbf;
-}
-
-.star{
-  font-size:22px;
-}
-
-footer{
-  margin-top:50px;
-  padding:20px;
-  font-size:14px;
-  opacity:0.7;
-}
-
-button{
-  background:#ffb6d9;
-  border:none;
-  padding:12px 20px;
-  border-radius:20px;
-  font-size:16px;
-  cursor:pointer;
-  transition:0.3s;
-}
-
-button:hover{
-  background:#ffd6ec;
+  padding:10px;
+  margin-bottom:10px;
+  border-radius:10px;
 }
 </style>
 </head>
@@ -62,46 +94,57 @@ button:hover{
 <body>
 
 <header>
-🌸 Sana's Fairy Tale World 🌸
+🎥 Sana Channel
 </header>
 
-<div class="card">
-<h2>自己紹介</h2>
-<p>
-はじめまして、紗奈です ✨<br>
-メルヘンな世界やかわいいものが好きです。<br>
+<div class="container">
 
-星や物語、ファンタジーの雰囲気にワクワクします 🌙
-</p>
+<div class="video-box">
+<h2>自己紹介動画</h2>
+
+<div class="video">
+ここに動画
 </div>
 
-<div class="card">
-<h2>好きなこと</h2>
-<p class="star">⭐ イラスト</p>
-<p class="star">⭐ 音楽</p>
-<p class="star">⭐ ファンタジー</p>
-<p class="star">⭐ かわいいデザイン</p>
-</div>
-
-<div class="card">
-<h2>メッセージ</h2>
 <p>
-このサイトは、私の小さな物語のページです 📖<br>
-来てくれてありがとうございます！
+こんにちは、紗奈です 🌸<br>
+このページは私の自己紹介チャンネルです。<br>
+メルヘンな世界やかわいいものが好きです！
 </p>
 
-<button onclick="message()">魔法のボタン ✨</button>
+<button class="button" onclick="hello()">チャンネル登録</button>
 </div>
 
-<footer>
-Made with magic by Sana ✨
-</footer>
+<div class="profile">
+<div class="avatar">🌸</div>
+
+<h2>紗奈</h2>
+
+<p>
+⭐ 好きなこと<br>
+・イラスト<br>
+・音楽<br>
+・ファンタジー
+</p>
+
+<div class="list">
+<h3>おすすめ</h3>
+
+<div class="card">自己紹介</div>
+<div class="card">好きなもの紹介</div>
+<div class="card">メルヘンな世界</div>
+
+</div>
+
+</div>
+
+</div>
 
 <script>
-function message(){
-  alert("紗奈のメルヘンワールドへようこそ！🌙✨");
+function hello(){
+alert("紗奈チャンネルへようこそ！✨");
 }
 </script>
 
 </body>
-</html>
+</
